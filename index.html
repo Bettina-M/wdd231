@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bettina Menya">
-    <meta name="description" content="WDD 231 Homepage">
-    <title>Bettina Menya WDD 231</title>
+    <title> Betina Menya </title>
+    <meta name="author" content="Betina Menya">
+    <meta name="description" content="Betina Menya Homepage">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <script src="scripts/homepage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <header>
+        <div id="first">
+            <picture>
+                <source media="(max-width:300px)" srcset="images/homepage/mypicture.webp">
+                <source media="(max-width:150px)" srcset="images/homepage/mypicture-medium.webp">
+                <img src="images/homepage/mypicture.webp" alt="picture of Bettina" width="150px" height="160px">
+            </picture>
+            <h1>Betina Menya</h1>
+        </div>
+        <button id="button"></button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Chamber</a>
+            <a href="https://github.com/Bettina-M">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/bettina-menya/">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="course">
+                <h3>Course Work</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>  
+                
+            </div>
+            <div id="country">
+                <h3>Nairobi, Kenya</h3>
+                <picture id="nairobi">
+                    <source media="(max-width:300px)" srcset="images/homepage/nairobi-large.webp">
+                    <source media="(max-width:180px)" srcset="images/homepage/nairobi-small.webp">
+                    <img src="images/homepage/Nairobi-medium.webp" width=200" length="350"
+                        alt="picture of Nairobi City">
+                </picture>
+                <p>Nairobi</p>
+            </div>
+            <div id="cert">
+                <h3>Web and Computer Programming Certificate</h3>
+                <div class="course-menu">
+                    <a href ='#' id="all">All</a>
+                    <a href='#' id="cse">CSE</a>
+                    <a href='#' id="wdd">WDD</a>
+                </div>
+                <div id="units"></div>
+                <p id="credits"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025  Betina Menya | Nairobi</p> <span id="flag"></span>
+        <span id="date"></span>
+    </footer>
 </body>
+
 </html>
