@@ -1,0 +1,49 @@
+   /*for wider screens*/
+
+    @media only screen and (min-width:1024px) {
+        #button {
+            display: none;
+        }
+
+        #main-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding: 15px;
+            color: white;
+            margin-bottom: 15px;            
+            
+        }
+
+        #main-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+        }
+
+        #course, #country {
+            grid-column: span 1;
+            padding: 20px;
+        }
+
+        #cert{
+            grid-column: span 2;
+            padding: 20px;
+        }
+
+        #units {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 15px;
+            
+        }
+
+        #units p {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+        }
+
+        
+    }
