@@ -105,7 +105,7 @@ function displaycourse(courses) {
         container.appendChild(name);
 
         if (course.completed == false) {
-            name.style.backgroundColor = 'grey';
+            name.style.backgroundColor = '#40434e';
         }
 
     });
