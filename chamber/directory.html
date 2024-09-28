@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce</title>
+    <meta name="author" content="betina menya">
+    <meta name="description" content="nairobi chamber of commerce home">
+    <meta property="og:title" content="Nairobi chamber of comerce home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/homepage/bm-high-resolution-logo.png">
+    <meta property="og:url" content="https://bettina-m.github.io/wdd231/">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Nairobi chamber of commerce">
+    <meta property="twitter:image" content="https://bettina-m.github.io/wdd231/">
+    <link rel="icon" href="images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href='#'><img id='logo' src="images/logo.webp" width=150 height= 150 alt="Nairobi Chamber of Commerce Logo"></a>
+            <span id="web-title">Nairobi <br>Chamber of Commerce</span>
+            <div id="nav-links">
+                <a href="#" >Home</a>
+                <a href="#">Discover</a>
+                <a href="#">Business directory</a>
+                <a href="#">Join</a> 
+            </div>
+            
+            <button id="menu">&#9776;</button>   
+        </nav>
+    </header>
+    <main>
+        <Picture id="nairobi">
+            <source media="(max-width:480px)" srcset="images/nairobi-small.webp">
+            <source media="(max-width:768px)" srcset="images/nairobi-medium.webp">
+            <img id='hero' src="images/nairobi-xl.webp" alt="image of nairobi city">
+        </Picture>
+        <button id="register">Register</button>
+        
+        <h2>Home</h2>
+        
+        <section id="area1">
+            <div class="dash">
+                <h3>Events</h3>
+                <p>Annual General Meeting | October 2 2024</p>
+                <p>Impact Community Initiative | November 30 2024</p>
+                <p>End of Year Meetup | December 12 2024</p>
+            </div>
+            <div class="dash">
+                <h3>Current Weather</h3>
+                <img id='sun' src="images/sunny.svg" alt="sunny-weather icon" width="60">
+                <p>27&#8451;</p>
+                <p>Sunny</p>
+                <p>High 30&#8451;</p>
+                <p>Low 22&#8451;</p>
+                <p>Humidity 30%</p>
+            </div>
+            <div class="dash">
+                <h3>Weather Forecast</h3>
+                <p>Today 27&#8451;</p>
+                <p>Saturday 30&#8451;</p>
+                <p>Sunday 26&#8451;</p>
+
+            </div>
+        </section>
+        <div class="views">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div>
+            <p>Nairobi Chamber of Commerce</p>
+            <p>10th Avenue Streeet</p>
+            <p>Nairobi, Kenya 00100</p>
+            <a href="mailto:info@nairobi.commerce">info@nairobi.commerce</a>
+            <p>(+254) 444 555 666</p>
+        </div>
+        <div id="social-media">
+            <a href="#"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
+            <a href="#"><img src="images/linnkedIn.png" alt="LinkedIn Icon" width="40"></a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Bettina Menya</p>
+            <p>&copy;2025 Nairobi Chamber of Commerce</p>
+            <span id="modified"></span>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

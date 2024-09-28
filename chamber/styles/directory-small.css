@@ -1,0 +1,110 @@
+@media screen and (max-width:640px) {
+    *{
+        max-width:100%;
+    }
+
+    header nav{
+        display: grid;
+        grid-template-columns:auto;
+        padding: 50px;
+
+
+    }
+    
+    #nav-links{
+        display: none;
+        opacity: 0;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        right: 10px;
+        transform: translateY(-20px);
+        width:100%;
+        z-index: 1;
+    }
+
+   #logo{
+        position:absolute;
+        top:10px;
+        left: 5px;
+        display: block;
+        max-width: 100px;
+        max-height: 80px;
+        margin-left: 5px;
+    }
+
+    #web-title{
+        font-size: 20px;
+        margin-left: 60px;
+        margin-top: -40px;
+    }
+
+    #register{
+        position:relative;
+        font-size: smaller;
+        margin-top: 20px;
+    }
+    #menu{
+        position: absolute;
+        display:block;
+        top:15px;
+        right:10px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        text-align: right;
+        margin-right: 5px;
+        color: White;
+        cursor:pointer;
+    }
+
+    #menu.open::before{
+        content: "❎";
+        font-size: 2rem;
+    }
+
+    #nav-links.open{
+        display:flex;
+        flex-direction: column;
+        opacity: 1;
+        transform: translateY(0);
+        text-align:justify;
+        padding: 20px;
+        margin: 10px 50px;
+        
+        
+
+    }
+
+    #area1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .dash{
+        width: 100%;
+        text-align: center;
+    }
+
+    .dash ul{
+        font-size: 12px;
+    }
+
+    #cards{
+        display:flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: block;
+    
+    }
+
+    footer div{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    
+
+}

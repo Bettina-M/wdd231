@@ -19,20 +19,27 @@ body {
     max-width: 100%;
     height: 100%;
 }
-
-#button::before {
-    content: "☰";
+#button{
     font-size: 2rem;
-    
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width:100%;
+    text-align: right;
+    margin-right: 5px;
 }
 
-#button.open::before {
+
+#button.open::after {
     content: "❎";
     font-size: 2rem;
 }
 
 #main-nav.open {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 
 }
 
@@ -49,6 +56,8 @@ body {
 
 #main-nav {
     display: none;
+    opacity:0;
+    transition: transform 0.3s ease-out;
 
 }
 
@@ -73,8 +82,10 @@ header {
 }
 
 header h1 {
-    padding: 30px;
+    padding: 15px;
     color: white;
+    font-size: 25px;
+    
 }
 
 h3 {
