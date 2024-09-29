@@ -1,5 +1,5 @@
 /*for large screen*/
-@media screen and (min-width: 1200px){
+@media screen and (min-width:900px){
 
     *{
     margin:0;
@@ -41,21 +41,13 @@ section{
     max-width: 100%;
 }
 
-header nav{
+nav{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
-   /* display: flex;
-    justify-content: space-around;
-    background-color: #f0f0f0;  */
-}
-
-
-nav button{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
     font-family: 'Gowun Batang', Arial, Helvetica, sans-serif;  
-    padding:15px 50px;
+    padding:5px;
     color:#ffff;
-    background-color:grey;
-    
+    gap: 10px;
     
 }
 

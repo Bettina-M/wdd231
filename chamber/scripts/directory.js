@@ -16,6 +16,7 @@ let cards = document.querySelector('#cards');
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
     menuButton.classList.toggle('open');
+    
 });
 
 async function showbusiness(filter ='all'){
@@ -73,7 +74,7 @@ const displayMembers = (chamberMembers) =>{
         tag.textContent = member.tagLine;
         email.textContent= `Email: ${member.email}`;
         phone.textContent= `phone:${member.phone}`;
-        web.textContent= `URL:${member.website}`;
+        web.textContent= `${member.website}`;
         web.href =member.website;
         web.target = "_blank";
         url.setAttribute('alt',`Image of ${member.businessName}`);
@@ -113,6 +114,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     function showList(){
         cards.classList.add('list-view');
         displayMembers.classList.remove('grid-view')
+    
     }
     showbusiness('all');
 });
