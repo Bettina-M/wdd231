@@ -39,7 +39,7 @@ header nav{
 
 .active::after{
     content:"📍";
-    font-size: smaller;
+    font-size:smaller;
 }
 #menu{
     display: none;
