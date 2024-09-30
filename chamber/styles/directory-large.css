@@ -36,6 +36,11 @@ header nav{
 .active{
     background-color: var(--secondary-color--);
 }
+
+.active::after{
+    content:"📍";
+    font-size: smaller;
+}
 #menu{
     display: none;
 }
