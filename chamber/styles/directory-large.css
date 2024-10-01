@@ -1,16 +1,17 @@
 
 *{
-    --primary-color--:#d90429;
-    --secondary-color--:#2b2d42;
-    --accent-color1--:#d3d3d3;
+    --primary-color:#d90429;
+    --secondary-color:#2b2d42;
+    --accent-color1:#d3d3d3;
     max-width: 100%;
     box-sizing: border-box;
     font-family: 'Open Sans',Arial, Helvetica, sans-serif;
     
+    
 }
 
 header {
-    background-color: var(--primary-color--);
+    background-color: var(--primary-color);
     padding: 5px 0;
 }
 
@@ -56,7 +57,7 @@ nav {
 }
 
 #nav-links a:hover {
-    color: var(--accent-color--);
+    color: var(--accent-color1);
 }
 
 
@@ -72,19 +73,23 @@ nav {
     display: none;
 }
 
+main{
+    background-color: #fff;
+}
+
 #register{
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     z-index:2;
-    background-color: var(--primary-color--);
-    color:var(--accent-color1--);
+    background-color: var(--primary-color);
+    color:var(--accent-color1);
     font-size: 2em;
     padding: 5px 25px;
-    border: 2px var(--accent-color1--);
+    border: 2px var(--accent-color1);
     border-radius: 5px;
-    box-shadow: 2px 4px 2px var(--accent-color1--);
+    box-shadow: 2px 4px 2px var(--accent-color1);
     
 }
 
@@ -96,7 +101,7 @@ nav {
 h2{
     text-align: center;
     font-size: 2em;
-    color: var(--primary-color--);
+    color: var(--primary-color);
 }
 
 
@@ -121,10 +126,10 @@ main #area1, #cards{
 }
 
 .dash{
-    border: 1px solid var(--accent-color1--);
+    border: 1px solid var(--accent-color1);
     padding: 20px;
     text-align: left;
-    box-shadow: 2px 4px 4px 2px var(--accent-color1--);
+    box-shadow: 2px 4px 4px 2px var(--accent-color1);
     background-color: #fff;
     font-weight: bold;
     
@@ -132,8 +137,8 @@ main #area1, #cards{
 
 .dash h3{
     width: 100%;
-    box-shadow: 4px 4px var(--accent-color1--);
-    background-color: var(--primary-color--);
+    box-shadow: 4px 4px var(--accent-color1);
+    background-color: var(--primary-color);
     padding: 20px;
     color: white;
 }
@@ -157,10 +162,10 @@ main #area1, #cards{
 #grid, #list{
     padding: 15px 30px;
     margin: 0 15px;
-    background-color: var(--primary-color--);
+    background-color: var(--primary-color);
     color: white;
-    box-shadow: 2px 4px 4px 2px var(--accent-color1--);
-    border: 2px var(--primary-color--);
+    box-shadow: 2px 4px 4px 2px var(--accent-color1);
+    border: 2px var(--primary-color);
     border-radius: 5px;
 
 }
@@ -177,10 +182,10 @@ main #area1, #cards{
     display: block;
     align-items: center;
     text-align: center;
-    border: 1px solid var(--accent-color1--);
+    border: 1px solid var(--accent-color1);
     padding: 10px;
     margin:10px;
-    box-shadow: 2px 4px 4px 2px var(--accent-color1--);
+    box-shadow: 2px 4px 4px 2px var(--accent-color1);
     background-color: #f9f9f9;
     max-width:100%;
 }
@@ -192,7 +197,7 @@ main #area1, #cards{
 }
 
 #cards section h4{
-    border-bottom: 2px solid var(--accent-color1--);
+    border-bottom: 2px solid var(--accent-color1);
     padding-bottom: 2px;
 }
 #cards section a{
@@ -228,11 +233,11 @@ main #area1, #cards{
 
 
 #cards.list-view section:nth-child(even) {
-	background-color:var(--accent-color1--);
+	background-color:var(--accent-color1);
 }
 
 footer{
-    background-color: var(--secondary-color--);
+    background-color: var(--secondary-color);
     color:white;
     display: grid;
     padding: 10px;
