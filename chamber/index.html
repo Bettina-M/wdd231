@@ -39,9 +39,9 @@
                     
                 </div>
                 <div id="nav-links">
-                    <a href="#" >Home</a>
+                    <a href="#" class="active">Home</a>
                     <a href="#">Discover</a>
-                    <a href="#"class="active">Business Directory</a>
+                    <a href="directory.html">Business Directory</a>
                     <a href="#">Join</a>
                 </div>
                 <button id="menu"></button>   
@@ -50,7 +50,39 @@
         
     </header>
     <main>
-        <h2>Business Directory</h2>
+        <Picture id="nairobi">
+            <source media="(max-width:480px)" srcset="images/nairobi-small.webp">
+            <source media="(max-width:768px)" srcset="images/nairobi-medium.webp">
+            <img id='hero' src="images/nairobi-xl.webp" alt="image of nairobi city">
+        </Picture>
+        <button id="register">Register</button>
+        
+        <h2>Home</h2>
+        
+        <section id="area1">
+            <div class="dash">
+                <h3>Events</h3>
+                <p>Annual General Meeting | October 2 2024</p>
+                <p>Impact Community Initiative | November 30 2024</p>
+                <p>End of Year Meetup | December 12 2024</p>
+            </div>
+            <div class="dash">
+                <h3>Current Weather</h3>
+                <img id='sun' src="images/sunny.svg" alt="sunny-weather icon" width="60">
+                <p>27&#8451;</p>
+                <p>Sunny</p>
+                <p>High 30&#8451;</p>
+                <p>Low 22&#8451;</p>
+                <p>Humidity 30%</p>
+            </div>
+            <div class="dash">
+                <h3>Weather Forecast</h3>
+                <p>Today 27&#8451;</p>
+                <p>Saturday 30&#8451;</p>
+                <p>Sunday 26&#8451;</p>
+
+            </div>
+        </section>
         <div class="views">
             <button id="grid">⏹️Grid</button>
             <button id="list">📄List</button>

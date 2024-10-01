@@ -9,32 +9,59 @@
     
 }
 
-header nav{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+header {
     background-color: var(--primary-color--);
+    padding: 5px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo {
+    max-width: 80px;
+    height: auto;
+}
+
+#web-title {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', Arial, sans-serif;
     color: white;
-    align-items: center; 
+    line-height: 1.2;
+    font-weight: bold;
+        
     
 }
-#nav a{
-    text-align: right;
-    color:white;
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+#nav-links a {
     text-decoration: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    margin:0;
-    
-
+    color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
 }
 
-#nav-links a{
-    padding: 5px 15px;
-    margin: 0 10px;
+#nav-links a:hover {
+    color: var(--accent-color--);
 }
+
 
 .active{
-    background-color: var(--secondary-color--);
+    background-color:#2b2d42;
 }
 
 .active::after{
@@ -45,18 +72,6 @@ header nav{
     display: none;
 }
 
-#web-title{
-    font-size: 2rem;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-#web-title::first-letter{
-    font-size:200%;
-    font-weight: bold;
-    color:#2b2d42
-}
 #register{
     position:absolute;
     top:50%;
