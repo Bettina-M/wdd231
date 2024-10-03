@@ -5,6 +5,21 @@ document.querySelector('#modified').innerHTML = `Last Modified ${time}`;
 
 const cards = document.getElementById("cards");
 
+const menuButton= document.querySelector('#menu');
+
+let nav = document.querySelector('#nav-links');
+
+
+
+
+//for the menu button
+menuButton.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    menuButton.classList.toggle('open');
+    
+});
+
+
 async function showBusiness() {
     try {
         let response = await fetch('data/chamber.json');
