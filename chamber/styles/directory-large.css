@@ -84,9 +84,10 @@ main{
     transform: translate(-50%,-50%);
     z-index:2;
     background-color: var(--primary-color);
-    color:var(--accent-color1);
+    color:white;
+    font-weight: bold;
     font-size: 2em;
-    padding: 5px 25px;
+    padding: 2px 15px;
     border: 2px var(--accent-color1);
     border-radius: 5px;
     box-shadow: 2px 4px 2px var(--accent-color1);
@@ -98,6 +99,17 @@ main{
     background-color:grey
 }
 
+#welcome{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5em;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
 h2{
     text-align: center;
     font-size: 2em;
@@ -105,6 +117,22 @@ h2{
 }
 
 
+#read-more{
+    text-align:justify;
+    margin: 15px 20px;
+    line-height: 2em;
+    padding:5px 15px;
+    font-weight: 500;
+}
+
+#read-more a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#read-more a:hover{
+    background-color:#d3d3d3
+}
 main #area1, #cards{
     margin: 0 20px;
 }
@@ -114,13 +142,14 @@ main #area1, #cards{
     text-align: center;
     width: 100%;
     position: relative;
+    opacity: 0.5;
     
 }
 
 #area1{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 10px;
     margin: 20px 0;
    
 }
@@ -131,26 +160,31 @@ main #area1, #cards{
     text-align: left;
     box-shadow: 2px 4px 4px 2px var(--accent-color1);
     background-color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     
 }
 
 .dash h3{
     width: 100%;
+    margin-left: -20px;
+    margin-right:-10px;
     box-shadow: 4px 4px var(--accent-color1);
     background-color: var(--primary-color);
     padding: 20px;
     color: white;
 }
-.dash p{
-    font-size: larger;
-    
+
+.dash ul{
+    padding-left: 20px;
+    line-height: 1.5em;
 }
 
-.dash p::marker{
-    content: '';
-    font-size: 2rem;
+.dash li::marker{
+    content: '• ';
+    color: var(--primary-color);
+    font-size: 1.5em;
 }
+/*this is for directory page*/
 .views{
     padding: 15px;
     margin: 10px 0;

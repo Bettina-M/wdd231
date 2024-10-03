@@ -26,12 +26,10 @@
     #nav-links{
         display: flex;
         flex-direction:column;
-        text-align:right;
         max-height: 0;
-        overflow: hidden;
         transition: max-height 0.8s ease-in-out;
         margin-right:10px;
-        
+        overflow: hidden;
 
     }
    
@@ -40,13 +38,14 @@
     #nav-links.open {
         margin-top: 15px;
         max-height: 1500px;
+        
 
     }
     #nav-links a{
+        font-size: 15px;
         width: 100%;
-        padding: 10px;
-        text-align: right;
-        
+        padding: 5px;
+        text-align:center;    
         
     }
 
@@ -74,13 +73,29 @@
         
     }
 
-    
+    #nairobi{
+        opacity: 1;
+    }
 
     #register{
         position:relative;
         font-size: smaller;
         margin-top: 20px;
     }
+
+    #welcome{
+        position: relative;
+        font-size: smaller;
+        margin: 20px 20px;
+        
+    }
+    
+    #read-more{
+        font-size: smaller;
+        line-height: 2rem;
+        margin-top: -30px;
+    }
+
     
     
     #area1{
@@ -92,13 +107,12 @@
 
     .dash{
         width: 100%;
-        text-align: center;
+        font-size:smaller;
+        
     }
-
-    .dash ul{
-        font-size: 12px;
-    }
-
+    
+    
+    /*directory page*/
     #cards{
         display:flex;
         flex-direction: column;

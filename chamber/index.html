@@ -6,13 +6,13 @@
     <title>Nairobi Chamber of Commerce</title>
     <meta name="author" content="betina menya">
     <meta name="description" content="nairobi chamber of commerce home">
-    <meta property="og:title" content="Nairobi chamber of comerce home">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp">
-    <meta property="og:url" content="https://bettina-m.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Nairobi chamber of comerce home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp"/>
+    <meta property="og:url" content="https://bettina-m.github.io/wdd231/chamber/directory.html" />
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Nairobi chamber of commerce">
-    <meta property="twitter:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="twitter:title" content="Nairobi chamber of commerce" />
+    <meta property="twitter:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp" />
     <link rel="icon" href="images/favicon_package_v0.16/favicon-32x32.png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory-large.css">
@@ -23,11 +23,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/chamberWeather.js" defer ></script>
+    <script src="scripts/highlight.js" defer ></script>
+    
 </head>
+
 <body>
     <header>
-
-        <header>
             <nav id="nav">
                 <div id="logo-title">
                     <a href='#'>
@@ -46,7 +48,7 @@
                 </div>
                 <button id="menu"></button>   
             </nav>
-        </header>
+
         
     </header>
     <main>
@@ -55,38 +57,35 @@
             <source media="(max-width:768px)" srcset="images/nairobi-medium.webp">
             <img id='hero' src="images/nairobi-xl.webp" alt="image of nairobi city">
         </Picture>
-        <button id="register">Register</button>
+        <button id="register">Register Today</button>
         
         <h2>Home</h2>
-        
+        <p id="welcome">Welcome to the Nairobi Chamber of Commerce.</p>
+       
+        <p id="read-more">Explore our comprehensive <a href="directory.html" target="_blank">business directory</a>, featuring a diverse range of member companies, 
+            their services, and contact details, making it easier than ever to find the right partners for your needs. 
+            Stay informed with the latest industry news, access valuable resources for entrepreneurs, and <a href="#">discover</a> upcoming networking events designed to foster collaboration and growth within our thriving business ecosystem. 
+            <a>Join</a> us in shaping the future of commerce in Nairobi!</p>
         <section id="area1">
             <div class="dash">
                 <h3>Events</h3>
-                <p>Annual General Meeting | October 2 2024</p>
-                <p>Impact Community Initiative | November 30 2024</p>
-                <p>End of Year Meetup | December 12 2024</p>
+                <ul>
+                    <li>Annual General Meeting | October 2, 2024</li>
+                    <li>Impact Community Initiative | November 30, 2024</li>
+                    <li>End of Year Meetup | December 12, 2024</li>
+                </ul>
             </div>
             <div class="dash">
                 <h3>Current Weather</h3>
-                <img id='sun' src="images/sunny.svg" alt="sunny-weather icon" width="60">
-                <p>27&#8451;</p>
-                <p>Sunny</p>
-                <p>High 30&#8451;</p>
-                <p>Low 22&#8451;</p>
-                <p>Humidity 30%</p>
+                <div id="current-weather"></div>
             </div>
             <div class="dash">
                 <h3>Weather Forecast</h3>
-                <p>Today 27&#8451;</p>
-                <p>Saturday 30&#8451;</p>
-                <p>Sunday 26&#8451;</p>
+                <div id="forecast"></div>
 
             </div>
         </section>
-        <div class="views">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
+
         <div id="cards"></div>
     </main>
     <footer>

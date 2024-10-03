@@ -1,5 +1,5 @@
 let today = new Date();
-let time = today.toLocaleString();
+const time = today.toLocaleString();
 
 document.querySelector('#modified').innerHTML = `Last Modified ${time}`;
 
@@ -12,6 +12,8 @@ let nav = document.querySelector('#nav-links');
 
 let cards = document.querySelector('#cards');
 
+
+
 //for the menu button
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
@@ -19,6 +21,7 @@ menuButton.addEventListener('click', () => {
     
 });
 
+ 
 async function showbusiness(filter ='all'){
     try{
         let response = await fetch('data/chamber.json');
@@ -49,7 +52,7 @@ async function showbusiness(filter ='all'){
                     break;
             }
             
-            displayMembers(chamberMembers);
+        displayMembers(chamberMembers);
         }
         
     }catch(error){
@@ -57,7 +60,7 @@ async function showbusiness(filter ='all'){
     }
 }
 
-const displayMembers = (chamberMembers) =>{
+ const displayMembers = (chamberMembers) =>{
    cards.innerHTML = '';
 
     chamberMembers.forEach(member => {
@@ -111,11 +114,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     listButton.addEventListener('click', showList);
 
-    function showList(){
+   function showList(){
         cards.classList.add('list-view');
         displayMembers.classList.remove('grid-view')
+   }    
     
-    }
     showbusiness('all');
+    
+    
+
 });
+
 

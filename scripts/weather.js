@@ -39,4 +39,6 @@ function displayResults(data){
     weatherIcon.setAttribute('src',iconUrl);
     weatherIcon.setAttribute('alt', 'weather icon');
     caption.textContent = description;
+
+    
 };
