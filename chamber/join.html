@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce</title>
+    <meta name="author" content="betina menya">
+    <meta name="description" content="nairobi chamber of commerce home">
+    <meta property="og:title" content="Nairobi chamber of comerce home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp"/>
+    <meta property="og:url" content="https://bettina-m.github.io/wdd231/chamber/directory.html" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Nairobi chamber of commerce" />
+    <meta property="twitter:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp" />
+    <link rel="icon" href="images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   <script src="scripts/directory.js" defer></script>
+   <script src="scripts/join.js" defer></script>
+   <script src="scripts/thankyou.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div id="logo-title">
+                <a href='#'>
+                    <img id='logo' src="images/logo.webp" alt="Nairobi Chamber of Commerce Logo">
+                </a>
+                <h1>
+                    <span id="web-title">Nairobi <br>Chamber of Commerce</span>
+                </h1>
+                
+            </div>
+            <div id="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Discover</a>
+                <a href="directory.html">Business Directory</a>
+                <a href="join.html">Join</a>
+            </div>
+            <button id="menu"></button>   
+        </nav>
+
+    
+</header>
+  <main>
+    <div class="join">
+        <div id="member-details">
+            <h3>Become a Member</h3>
+            <form method="get" action="thankyou.html" autocomplete="on">
+                <label for="first">First Name: </label><br>
+                <input id="first" name="First-Name" type="text" required placeholder="Jane"><br>
+                
+                <label for="second">Second Name:</label><br>
+                <input id="second" name="Second-Name" type="text" required placeholder="Doe"><br>
+                
+                <label for="title">Organizational Title:</label><br>
+                <input id="title" name="Title"  type="text" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters, using only letters, hyphens, and spaces."><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input id="email" name="Email" type="email" required placeholder="Jane@xyz.com"><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input id="phone" name="Phone" type="tel" ><br>
+                
+                <label for="org">Organization Name: </label><br>
+                <input id="org" name="Organization" type="text" required><br>
+                
+                <label for="level">Membership Level:</label><br>
+                <select name="Membership" id="level">
+                        <option>Non-Profit</option>
+                        <option>Gold</option>
+                        <option>Silver</option>
+                        <option>Bronze</option>
+                </select><br>
+        
+                <label for="describe">Business Description</label><br>
+                <textarea name="Description" id="describe" cols="20" rows="4"></textarea><br>
+                <input type="hidden" id="timestamp" name="Timestamp">
+                <input type="submit" id="submit" value="Register"><br>
+            </form>
+        </div>
+        <div id="membership-level">
+            <h3>Membership Categories</h3>
+            <section id="non-profit" class="more">
+                <h3>Non-Profit Level</h3>
+                <button class="show-more">Learn More</button>
+                <dialog class="dialog">
+                    <div class="modal-header">
+                    <h3>Non-profit Membership</h3>
+                    <button class="close-modal">&#10006;</button>
+                    </div>
+                    <h4>Benefits</h4>
+                    <p>Cost-effective option for non-profit organizations. Enjoy basic event access and networking opportunities tailored for community growth and collaboration.</p>
+                </dialog>
+            </section>
+            <section id="gold" class="more">
+                <h3>Gold Level</h3>
+                <button class="show-more">Learn More</button>
+                <dialog class="dialog">
+                    <div class="modal-header">
+                    <h3>Gold Membership</h3>
+                    <button class="close-modal">&#10006;</button>
+                    </div>
+                    <h4>Benefits</h4>
+                    <p>The premium choice for well-established businesses. Enjoy all Silver benefits along with invitations to high-profile events, premium advertising, VIP networking, and significant discounts on all chamber events and services.</p>
+                </dialog>
+            </section>
+            <section id="silver" class="more">
+                <h3>Silver Level</h3>
+                <button class="show-more">Learn More</button>
+                <dialog class="dialog">
+                    <div class="modal-header">
+                    <h3>Silver Membership</h3>
+                    <button class="close-modal">&#10006;</button>
+                    </div>
+                    <h4>Benefits</h4>
+                    <P>Perfect for growing businesses. Includes all Bronze benefits plus priority access to training sessions, additional event discounts, and enhanced advertising opportunities like home page spotlight placements.</P>
+                </dialog>
+            </section>
+            <section id="bronze" class="more">
+                <h3>Bronze Level</h3>
+                <button class="show-more">Learn More</button>
+                <dialog class="dialog">
+                    <div class="modal-header">
+                    <h3>Bronze Membership</h3>
+                    <button class="close-modal">&#10006;</button>
+                    </div>
+                    <h4>Benefits</h4>
+                    <P>A solid foundation for small businesses. Gain access to exclusive events, receive basic advertising support, and enjoy modest event discounts to help your business grow.</P>
+                </dialog>
+            </section>
+        </div>
+    </div>
+  </main>  
+  <footer>
+    <div>
+        <p>Nairobi Chamber of Commerce</p>
+        <p>10th Avenue Streeet</p>
+        <p>Nairobi, Kenya 00100</p>
+        <a href="mailto:info@nairobi.commerce">info@nairobi.commerce</a>
+        <p>(+254) 444 555 666</p>
+    </div>
+    <div id="social-media">
+        <a href="#"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
+        <a href="#"><img src="images/linnkedIn.png" alt="LinkedIn Icon" width="40"></a>
+    </div>
+    <div>
+        <p>WDD 231 Class Project</p>
+        <p>Bettina Menya</p>
+        <p>&copy;2025 Nairobi Chamber of Commerce</p>
+        <span id="modified"></span>
+    </div>
+    
+</footer>
+</body>
+</html>

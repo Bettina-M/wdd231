@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nairobi Chamber of Commerce</title>
     <meta name="author" content="betina menya">
-    <meta name="description" content="nairobi chamber of commerce home"/>
-    <meta property="og:title" content="Nairobi chamber of commerce home"/>
-    <meta property="og:type" content="website">
+    <meta name="description" content="nairobi chamber of commerce home">
+    <meta property="og:title" content="Nairobi chamber of comerce home" />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp"/>
-    <meta property="og:url" content="https://bettina-m.github.io/wdd231/chamber/directory.html"/>
+    <meta property="og:url" content="https://bettina-m.github.io/wdd231/chamber/directory.html" />
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Nairobi chamber of commerce"/>
-    <meta property="twitter:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp"/>
+    <meta property="twitter:title" content="Nairobi chamber of commerce" />
+    <meta property="twitter:image" content="https://bettina-m.github.io/wdd231/chamber/images/logo.webp" />
     <link rel="icon" href="images/favicon_package_v0.16/favicon-32x32.png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory-large.css">
@@ -22,39 +22,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="scripts/directory.js" defer></script>
+   <script src="scripts/directory.js" defer></script>
+   <script src="scripts/join.js" defer></script>
+   <script src="scripts/thankyou.js" defer></script>
 </head>
-<body>
+<body onload="displayDetails()">
     <header>
+        <nav id="nav">
+            <div id="logo-title">
+                <a href='#'>
+                    <img id='logo' src="images/logo.webp" alt="Nairobi Chamber of Commerce Logo">
+                </a>
+                <h1>
+                    <span id="web-title">Nairobi <br>Chamber of Commerce</span>
+                </h1>
+                
+            </div>
+            <div id="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Discover</a>
+                <a href="directory.html">Business Directory</a>
+                <a href="join.html">Join</a>
+            </div>
+            <button id="menu"></button>   
+        </nav>
 
-        <header>
-            <nav id="nav">
-                <div id="logo-title">
-                    <a href='#'>
-                        <img id='logo' src="images/logo.webp" alt="Nairobi Chamber of Commerce Logo">
-                    </a>
-                    <h1>
-                        <span id="web-title">Nairobi <br>Chamber of Commerce</span>
-                    </h1>
-                    
-                </div>
-                <div id="nav-links">
-                    <a href="index.html" >Home</a>
-                    <a href="#">Discover</a>
-                    <a href="#" class="active">Business Directory</a>
-                    <a href="join.html">Join</a>
-                </div>
-                <button id="menu"></button>   
-            </nav>
-        </header>
-    <main>
-        <h2>Business Directory</h2>
-        <div class="views">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        <div id="cards"></div>
+    
+</header>
+    <main >
+    <h2 id="thanks">Thank you for joining us!</h2>
+    <h3 id="registration">Registration Details:</h3>
+    <p id="details"></p>
     </main>
+
     <footer>
         <div>
             <p>Nairobi Chamber of Commerce</p>
