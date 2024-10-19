@@ -463,26 +463,33 @@ form input[type="submit"]:hover{
     margin: 5px 20px;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px; 
+    margin: 0 auto; 
+}
+.discover .pics{
+    grid-column:2/3;
+}
+.discover h4{
+    text-align: center;
+    color: var(--primary-color);
+}
 
 
 
-.join .pics{
+
+
+.discover.pics{
     grid-column:2/3;
     opacity: 1;
     
 }
 
-.join .pics:hover{
+.discover .pics:hover{
     opacity: 0.8; /* Slight fade effect */
-}
-
-
-.pics:nth-child(1){
-    margin-top: -880px;
-}
-
-.pics:nth-child(2){
-    margin-top: -400px;
 }
 
 .about h3{
