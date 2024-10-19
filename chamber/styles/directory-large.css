@@ -21,6 +21,9 @@ nav {
     align-items: center;
     padding: 0 20px;
 }
+a{
+    text-decoration: none;
+}
 
 #logo-title {
     display: flex;
@@ -444,6 +447,47 @@ form input[type="submit"]:hover{
 }
 
 
+/*discover page*/
+
+#visit{
+    text-align: center;
+}
+.about{
+    padding:5px 50px;
+    grid-column: 1/2;
+    text-align: justify;
+    border: 2px solid grey;
+    box-shadow: 4px 4px var(--accent-color1);
+    border-radius: 5px;
+    max-width: 80%;
+    margin: 5px 20px;
+}
+
+
+
+
+.join .pics{
+    grid-column:2/3;
+    opacity: 1;
+    
+}
+
+.join .pics:hover{
+    opacity: 0.8; /* Slight fade effect */
+}
+
+
+.pics:nth-child(1){
+    margin-top: -880px;
+}
+
+.pics:nth-child(2){
+    margin-top: -400px;
+}
+
+.about h3{
+    color:var(--primary-color);
+}
 
 
 

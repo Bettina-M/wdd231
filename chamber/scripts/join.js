@@ -4,6 +4,7 @@ const showButton = document.querySelectorAll(".show-more");
 const displayModal = document.querySelectorAll(".dialog");
 const hideButton = document.querySelectorAll('.close-modal')
 
+
 showButton.forEach((button, index) =>{
     button.addEventListener('click',()=>{
         displayModal[index].showModal();
@@ -24,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function() {
         timestampField.value = timestamp;
     }
 });
+

@@ -148,6 +148,17 @@
         display:block;
        
     }
+
+    .about{
+        margin: 20px auto;
+    }
+
+    .join .pics{
+        margin-top: 80px;
+        max-width: 80%;
+    }
+
+    
     
 
 }
