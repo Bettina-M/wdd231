@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let currentIndex = 0;
     
-    const slideDuration = 3000; // 3 seconds pause between slides
+    const slideDuration = 3000; 
     
     function moveSlides() {
         currentIndex = (currentIndex + 1) % slides.length; // Loop through slides
