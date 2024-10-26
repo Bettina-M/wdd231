@@ -39,7 +39,7 @@ function fillForm(categories){
 }
 
 //Function to display the number of visits to the webpage//
-const visit = document.querySelector("#visit");
+
 
 function currentTime(){
     return new Date().getTime();
@@ -49,9 +49,9 @@ function showLastVisit(){
 
     const lastVisit = localStorage.getItem('lastVisit');
     const timeNow = currentTime();
-    const modal = document.getElementById(".modal");
+    const modal = document.getElementById("visitModal");
     const modalContent = document.getElementById("visitMessage");
-    
+    let message = "";
 
     if (lastVisit == null){
         const previousTime = parseInt(lastVisit, 10);
@@ -63,16 +63,19 @@ function showLastVisit(){
 
 
         if (days>1){
-            modalContent.innerHTML = `Welcome back, you last visited ${days} days ago`;
+            message = `Welcome back, you last visited ${days} days ago`;
         }
         else if(days < 1 && hours< 24) {
-            modalContent.innerHTML = `Back so soon! Awesome!`;
+            message = `Back so soon! Awesome!`;
         }
 
         else{
-            modalContent.innerHTML = `Welcome! Let us know if you have any questions.`
+            message = `Welcome! Let us know if you have any questions.`
         }
-
+        if (message) {
+            modalContent.innerHTML = message;
+            modal.style.display = 'block'; 
+        }
        localStorage.setItem('lastVisit', timeNow.toString());
     }
 
@@ -89,5 +92,5 @@ function showLastVisit(){
     });
 }
 
-showLastVisit();
+document.addEventListener("DOMContentLoaded", showLastVisit);
 
