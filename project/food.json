@@ -1,8 +1,8 @@
 {
-    "categories":[
+    "categories": [
         {
             "name": "Pizzas",
-            "description":  "A variety of pizzas with toppings like pepperoni, mushrooms, and extra cheese.",
+            "description": "A variety of pizzas with toppings like pepperoni, mushrooms, and extra cheese.",
             "image_url": "https://img.freepik.com/premium-photo/pepperoni-pizza-cheese-pizza-food-pizza-pizza-pepperoni-mozzarella-mozzarella-cheese-cheese_812450-5.jpg?w=740",
             "items": [
                 {"name": "Pepperoni Pizza", "price": "Ksh 1200"},
@@ -25,8 +25,8 @@
             "description": "Crispy fried chicken with a side of golden fries.",
             "image_url": "https://i.pinimg.com/564x/5a/52/43/5a524377a01dc6aaf0841149a7720bb4.jpg",
             "items": [
-              {"name": "2 Piece Combo", "price": "Ksh 1000"},
-              {"name": "4 Piece Combo", "price": "Ksh 1500"}
+                {"name": "2 Piece Combo", "price": "Ksh 1000"},
+                {"name": "4 Piece Combo", "price": "Ksh 1500"}
             ]
         },
         {
@@ -34,8 +34,8 @@
             "description": "Fresh fruit smoothies to keep you refreshed.",
             "image_url": "https://i.pinimg.com/564x/b1/ee/bf/b1eebfa1e5be3a51f225f50d4921c227.jpg",
             "items": [
-              {"name": "Mango Smoothie", "price": "Ksh 400"},
-              {"name": "Berry Smoothie", "price": "Ksh 500"}
+                {"name": "Mango Smoothie", "price": "Ksh 400"},
+                {"name": "Berry Smoothie", "price": "Ksh 500"}
             ]
         },
         {
@@ -43,17 +43,17 @@
             "description": "A selection of cold sodas.",
             "image_url": "https://i.pinimg.com/564x/8e/f1/74/8ef17431f90597241c2e239a5b98a3c6.jpg",
             "items": [
-              {"name": "Coke", "price": "Ksh 200"},
-              {"name": "Sprite", "price": "Ksh 200"}
+                {"name": "Coke", "price": "Ksh 200"},
+                {"name": "Sprite", "price": "Ksh 200"}
             ]
         },
         {
             "name": "Salads",
             "description": "Fresh salads with a choice of dressings.",
-            "image_url": "https://i.pinimg.com/enabled_lo/564x/44/ba/5a/44ba5a32f7c51606d3f27e8162f16a8b.jpg",
+            "image_url": "https://i.pinimg.com/564x/44/ba/5a/44ba5a32f7c51606d3f27e8162f16a8b.jpg",
             "items": [
-              {"name": "Caesar Salad", "price": "Ksh 600"},
-              {"name": "Greek Salad", "price": "Ksh 700"}
+                {"name": "Caesar Salad", "price": "Ksh 600"},
+                {"name": "Greek Salad", "price": "Ksh 700"}
             ]
         },
         {
@@ -61,10 +61,81 @@
             "description": "Choose from fries, onion rings, and more.",
             "image_url": "https://i.pinimg.com/564x/7d/ea/ad/7deaada4067189c03c31ed39e5d96892.jpg",
             "items": [
-              {"name": "Fries", "price": "Ksh 300"},
-              {"name": "Onion Rings", "price": "Ksh 400"}
+                {"name": "Fries", "price": "Ksh 300"},
+                {"name": "Onion Rings", "price": "Ksh 400"}
+            ]
+        },
+        {
+            "name": "Wraps",
+            "description": "Delicious wraps packed with fresh ingredients.",
+            "image_url": "https://i.pinimg.com/564x/12/3e/75/123e756c495c7bf151c3670dc9d68d47.jpg",
+            "items": [
+                {"name": "Chicken Wrap", "price": "Ksh 500"},
+                {"name": "Beef Wrap", "price": "Ksh 550"}
+            ]
+        },
+        {
+            "name": "Pasta",
+            "description": "Classic pasta dishes with flavorful sauces.",
+            "image_url": "https://i.pinimg.com/564x/9d/34/6a/9d346a5d3541cf5f35a18c7a9e23d2c7.jpg",
+            "items": [
+                {"name": "Spaghetti Bolognese", "price": "Ksh 900"},
+                {"name": "Pasta Alfredo", "price": "Ksh 850"}
+            ]
+        },
+        {
+            "name": "Desserts",
+            "description": "A sweet selection of treats to end your meal.",
+            "image_url": "https://i.pinimg.com/564x/1e/f2/4f/1ef24f35c69b92ae227d688dc48c212e.jpg",
+            "items": [
+                {"name": "Chocolate Cake", "price": "Ksh 500"},
+                {"name": "Ice Cream", "price": "Ksh 300"}
+            ]
+        },
+        {
+            "name": "Coffee",
+            "description": "Rich and aromatic coffee options.",
+            "image_url": "https://i.pinimg.com/564x/cf/ff/9e/cfff9e920bc68e2bc54b3e4ef50f1e14.jpg",
+            "items": [
+                {"name": "Espresso", "price": "Ksh 200"},
+                {"name": "Cappuccino", "price": "Ksh 300"}
+            ]
+        },
+        {
+            "name": "Ice Creams",
+            "description": "Delicious ice cream flavors to cool you down.",
+            "image_url": "https://i.pinimg.com/564x/45/df/1a/45df1a40fcb7e9c93a9f8f47bcd99d53.jpg",
+            "items": [
+                {"name": "Vanilla", "price": "Ksh 250"},
+                {"name": "Strawberry", "price": "Ksh 250"}
+            ]
+        },
+        {
+            "name": "Sandwiches",
+            "description": "Wholesome sandwiches for a quick bite.",
+            "image_url": "https://i.pinimg.com/564x/39/2e/d6/392ed65763d706a0849c36c7895fd9b5.jpg",
+            "items": [
+                {"name": "Ham Sandwich", "price": "Ksh 400"},
+                {"name": "Veggie Sandwich", "price": "Ksh 350"}
+            ]
+        },
+        {
+            "name": "Tea",
+            "description": "Refreshing tea options to enjoy.",
+            "image_url": "https://i.pinimg.com/564x/b3/6e/fd/b36efdc2d82e90eb978474d6b8658bc2.jpg",
+            "items": [
+                {"name": "Green Tea", "price": "Ksh 200"},
+                {"name": "Black Tea", "price": "Ksh 150"}
+            ]
+        },
+        {
+            "name": "Juices",
+            "description": "Freshly squeezed fruit juices.",
+            "image_url": "https://i.pinimg.com/564x/d2/1e/f7/d21ef7a1649782d9dcf36ae828b1d150.jpg",
+            "items": [
+                {"name": "Orange Juice", "price": "Ksh 300"},
+                {"name": "Apple Juice", "price": "Ksh 300"}
             ]
         }
-        
     ]
 }
