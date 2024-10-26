@@ -144,7 +144,7 @@ button{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     transition: transform 0.3s;
-    margin: 20px;
+    margin: 0 20px;
 }
 #menu div:hover {
     transform: scale(1.05); 
@@ -165,7 +165,7 @@ button{
 }
 
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -269,7 +269,7 @@ button{
     color: white;
     margin: 15px 10px;
     padding: 10px;
-    border-radius: 5px;          /* Rounded corners */
+    border-radius: 5px;          
     cursor: pointer;
 }
 
@@ -279,12 +279,17 @@ button{
     transform:scale(1.2);
 }
 .quantity-container {
-    display: flex;          /* Use Flexbox for horizontal alignment */
-    align-items: center;    /* Vertically center align items */
-    gap: 5px;               /* Space between buttons and input */
+    display: flex;          
+    align-items: center;    
+    gap: 5px;               
 }
 #food{
     padding: 10px;
+}
+
+#visit {
+    margin-bottom: 20px; 
+    font-weight: bold;
 }
 
 /*Thank you page*/

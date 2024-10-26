@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const slideDuration = 3000; 
     
     function moveSlides() {
-        currentIndex = (currentIndex + 1) % slides.length; // Loop through slides
-        slideshow.style.transform = `translateX(-${currentIndex * 400}px)`; // Move to the next slide
+        currentIndex = (currentIndex + 1) % slides.length; // Loops through slides
+        slideshow.style.transform = `translateX(-${currentIndex * 400}px)`; // Moves to the next slide
     }
     
     setInterval(moveSlides, slideDuration);

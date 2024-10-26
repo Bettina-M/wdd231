@@ -1,6 +1,9 @@
+const foodURL = `https://raw.githubusercontent.com/Bettina-M/wdd231/refs/heads/main/project/food.json`;
+
+
 export async function showMenu(){
     try{
-        let response = await fetch("data/food.json");
+        let response = await fetch(foodURL);
         if (response.ok){
             let data = await response.json();
             data = data.categories;
