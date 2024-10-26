@@ -158,7 +158,10 @@
         max-width: 80%;
     }
 
+    #main{
+        display:block;
     
+    }
     
 
 }

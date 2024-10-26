@@ -463,7 +463,7 @@ form input[type="submit"]:hover{
     margin: 5px 20px;
 }
 
-main {
+#main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;

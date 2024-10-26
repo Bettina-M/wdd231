@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <meta name="author" content="Bettina Menya">
+    <meta name="description" content="A Food delivery website for residents living in Nairobi Kenya">
+    <meta property="og:title" content="NaiBites" />
+    <meta property="og:type" content="website" />
+    <meta property="og:URL" content="https://bettina-m.github.io/wdd231/project/contact.html" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Bettina-M/wdd231/refs/heads/main/meta-image.png" />
+    <meta property="og:description" content="A Food delivery website for residents living in Nairobi Kenya." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Londrina+Sketch&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/menu.js" ></script>
+    <script type="module" src="scripts/order.js" ></script>
+    
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo-edited.webp" alt="logo">
+        <nav>
+            <a class="active" href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+        </nav>
+        <button id="navButton">&#9776;</button>
+    </header>
+    <main id="order-container">
+        <form id="orderForm" method="get" action="thank-you.html" autocomplete="on">
+            <h3>Enter your shipping details</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required >
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+        
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone" required>
+        
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" name="Address" required>
+
+            <label>Select Food</label><br>
+            <select id="food" name="Food">
+               <option value =" ">Select Food</option>
+            </select><br>
+            
+            <label for="quantity">Quantity</label>
+            <div class="quantity-container">
+                <button id="decreaseBtn">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button id="increaseBtn">+</button>
+            </div>
+            
+            
+            <button type="submit">Place Order</button>
+        
+        </form>
+    </main>
+    <footer><div>
+        <p>NaiBites</p>
+        <p>Uhuru Plaza Kimathi Street</p>
+        <p>PO Box 200</p>
+        <p>Nairobi Kenya</p>
+       </div>
+       <div id="social-media">
+        <a href="#"><img src="images/instagram.webp" alt="image icon of instagram"></a>
+        <a href="#"><img src="images/facebook.webp" alt="image icon of facebook"></a>
+        <a href="#"><img src="images/whatsapp.webp" alt="image icon of whatsapp"></a>
+        </div>
+        <div>
+            <p>&copy;2024 Betina Menya | Nairobi</p>
+            <span id="date"></span>
+        </div>
+    </footer>
+</body>
+</html>

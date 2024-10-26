@@ -13,7 +13,8 @@ function displayDetails(){
 
         const details = keyValuePairs.map((pair)=>{
             const [key, value] = pair.split('=');
-            return (`${key}: ${decodeURIComponent(value)}`);
+            return `${key}: ${decodeURIComponent(value).replace(/\+/g, " ")}`;
+
             // decodeURIComponent handles spaces and special characters
          });
 

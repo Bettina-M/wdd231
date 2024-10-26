@@ -40,8 +40,7 @@ body {
    
    max-height: 300px;
    opacity: 1;
-    
-    
+       
 }
 
 #active::after{
