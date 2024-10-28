@@ -10,7 +10,8 @@ function displayorder(){
 
         const details = keyValuePairs.map((pair)=>{
             const [key, value] = pair.split("=");
-            return `${key}: ${decodeURIComponent(value)}`;
+            const decodedValue = decodeURIComponent(value).replace(/\+/g, ' ');
+            return `${key}: ${decodedValue}`;
         });
 
         document.querySelector("#orderDetails").innerHTML= details.join("<br>");

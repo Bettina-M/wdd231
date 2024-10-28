@@ -16,23 +16,22 @@
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Londrina+Sketch&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/home-large.css">
     <link rel="stylesheet" href="styles/home-small.css">
-    <script src="scripts/home.js" defer></script>
-    <script type="module" src="scripts/menu.js" ></script>
     <script type="module" src="scripts/order.js" ></script>
+    <script src="scripts/home.js" defer></script>
     
 </head>
 <body>
     <header>
         <img id="logo" src="images/logo-edited.webp" alt="logo">
         <nav>
-            <a class="active" href="home.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="order.html">Order</a>
+            <a  href="home.html">Home</a>
+            <a  href="menu.html">Menu</a>
+            <a class="active" href="order.html">Order</a>
         </nav>
         <button id="navButton">&#9776;</button>
     </header>
     <main id="order-container">
-        <div id="visitModal" class="modal">
+        <div id="visitModal" class="modals">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <p id="visitMessage"></p>

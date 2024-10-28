@@ -1,13 +1,11 @@
 const foodURL = `https://raw.githubusercontent.com/Bettina-M/wdd231/refs/heads/main/project/food.json`;
-
-
 export async function showMenu(){
+    
     try{
         let response = await fetch(foodURL);
         if (response.ok){
             let data = await response.json();
             data = data.categories;
-            console.log(data);
             displayMenu(data);
             return data;
             
@@ -67,5 +65,4 @@ function openModal(category){
         showModal.style.display = "flex";
 }
 document.addEventListener("DOMContentLoaded", showMenu);
-
 

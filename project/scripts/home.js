@@ -2,6 +2,7 @@ let today = new Date();
 let time = today.toLocaleString();
 document.querySelector("#date").innerHTML = `Last modified ${time}`;
 
+
 //homepage slideshow div//
 document.addEventListener("DOMContentLoaded", function() {
     const slideshow = document.querySelector(".slideshow");
@@ -25,4 +26,6 @@ const nav = document.querySelector("nav");
 navButton.addEventListener('click',()=>{
     nav.classList.toggle("open");
     navButton.classList.toggle("open");
+
 });
+

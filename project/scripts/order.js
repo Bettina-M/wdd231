@@ -1,4 +1,4 @@
-import { showMenu } from "./menu.js";
+import {showMenu} from './menu.js';
 
 document.addEventListener("DOMContentLoaded", async ()=>{
     try{
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         }catch (error) {
             console.log("Error fetching menu data:", error.message);
         }
-})
+});
 
 function fillForm(categories){
     const food = document.querySelector("#food");
@@ -46,40 +46,36 @@ function currentTime(){
 }
 
 function showLastVisit(){
-
     const lastVisit = localStorage.getItem('lastVisit');
     const timeNow = currentTime();
     const modal = document.getElementById("visitModal");
     const modalContent = document.getElementById("visitMessage");
     let message = "";
 
-    if (lastVisit == null){
+    if (lastVisit !== null){
         const previousTime = parseInt(lastVisit, 10);
         const difference = timeNow - previousTime;
 
-        const days = Math.floor(difference/86400000);
+        const days = Math.floor(difference / 86400000);
+        const hours = Math.floor((difference % 86400000) / 3600000);
 
-        const hours = Math.floor(difference/3600000);
-
-
-        if (days>1){
-            message = `Welcome back, you last visited ${days} days ago`;
-        }
-        else if(days < 1 && hours< 24) {
+        if (days > 1){
+            message = `Welcome back, you last visited ${days} days ago.`;
+        } else if (days < 1 && hours < 24) {
             message = `Back so soon! Awesome!`;
         }
-
-        else{
-            message = `Welcome! Let us know if you have any questions.`
-        }
-        if (message) {
-            modalContent.innerHTML = message;
-            modal.style.display = 'block'; 
-        }
-       localStorage.setItem('lastVisit', timeNow.toString());
+    } else {
+        message = `Welcome! Let us know if you have any questions.`;
     }
 
-    const closeModal = document.getElementById("closeModal");
+    if (message) {
+        modalContent.innerHTML = message;
+        modal.style.display = 'block'; 
+    }
+
+    localStorage.setItem('lastVisit', timeNow.toString());
+
+    const closeModal = document.querySelector(".close");
     closeModal.addEventListener("click", () => {
         modal.style.display = 'none';
     });
@@ -93,4 +89,3 @@ function showLastVisit(){
 }
 
 document.addEventListener("DOMContentLoaded", showLastVisit);
-
